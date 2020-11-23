@@ -52,7 +52,7 @@ const DataAnalysisReport = ()=> {
               </tbody>
             </Table>
           </Colxx>
-          <Colxx>
+          <Colxx xxs={12}>
             <div style={{textAlign: 'center'}}>
               <h1>Reservations</h1>
             </div>
@@ -145,6 +145,61 @@ const DataAnalysisReport = ()=> {
                 <td><Card className="p-2">100</Card></td>
               </tr>
 
+              </tbody>
+            </Table>
+          </Colxx>
+
+        {/*  Data Analytics */}
+          <Colxx xxs={12}>
+            <div style={{textAlign: 'center'}}>
+              <h1>Data Analytics</h1>
+            </div>
+            <Table>
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>9pm - 12pm</th>
+                <th>12pm - 3pm</th>
+                <th>3pm - 7pm</th>
+                <th>7pm - 9pm</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr className="text-center">
+                <td><Card className="p-2">Total Confirmed Reservations</Card></td>
+                <td><Card className="p-2">100</Card></td>
+                <td><Card className="p-2">50</Card></td>
+                <td><Card className="p-2">500</Card></td>
+                <td><Card className="p-2">1000</Card></td>
+              </tr>
+              <tr className="text-center">
+                <td><Card className="p-2">Drink Reservations</Card></td>
+                <td><Card className="p-2">5</Card></td>
+                <td><Card className="p-2">5</Card></td>
+                <td><Card className="p-2">10</Card></td>
+                <td><Card className="p-2">20</Card></td>
+              </tr>
+              <tr className="text-center">
+                <td><Card className="p-2">Starter Reservations</Card></td>
+                <td><Card className="p-2">0</Card></td>
+                <td><Card className="p-2">0</Card></td>
+                <td><Card className="p-2">0</Card></td>
+                <td><Card className="p-2">0</Card></td>
+              </tr>
+              <tr className="text-center">
+                <td><Card className="p-2">Main Reservations</Card></td>
+                <td><Card className="p-2">100</Card></td>
+                <td><Card className="p-2">50</Card></td>
+                <td><Card className="p-2">500</Card></td>
+                <td><Card className="p-2">1000</Card></td>
+              </tr>
+              <tr className="text-center">
+                <td><Card className="p-2">Dessert Reservations</Card></td>
+                <td><Card className="p-2">200</Card></td>
+                <td><Card className="p-2">100</Card></td>
+                <td><Card className="p-2">1000</Card></td>
+                <td><Card className="p-2">2000</Card></td>
+              </tr>
               </tbody>
             </Table>
           </Colxx>
