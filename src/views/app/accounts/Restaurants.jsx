@@ -40,32 +40,32 @@ const Restaurants = ({match}) => {
                 />
                 <Route
                   exact={true}
-                  path={`${match.url}/outlets/:outletId`}
+                  path={`${match.url}/:shopId/:venueId`}
                   render={props => <OutletPage {...props} />}
                 />
                 <Route
                     exact={true}
-                    path={`${match.url}/outlets`}
+                    path={`${match.url}/:shopId`}
                     render={props => <Outlets {...props} />}
                 />
                 <Route
                     exact={true}
-                    path={`${match.url}/outlets/:outletId/data-list`}
+                    path={`${match.url}/:shopId/:venueId/data-list`}
                     render={props => <OutletDataListPage {...props} />}
                 />
                 <Route
                     exact={true}
-                    path={`${match.url}/outlets/:outletId/reports`}
+                    path={`${match.url}/:shopId/:venueId/reports`}
                     render={props => <OutletReportPage {...props} />}
                 />
                 <Route
                     exact={true}
-                    path={`${match.url}/outlets/:outletId/products`}
+                    path={`${match.url}/:shopId/:venueId/products`}
                     render={props => <AccountProductPage {...props} />}
                 />
                 <Route
                   // exact={true}
-                  path={`${match.url}/outlets/:outletId/team`}
+                  path={`${match.url}/:shopId/:venueId/team`}
                   render={props => <OutletTeamPage {...props} />}
                 />
                 <Redirect to="/error" />

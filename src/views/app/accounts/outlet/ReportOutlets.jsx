@@ -6,22 +6,22 @@ import { Colxx } from '../../../../components/common/CustomBootstrap';
 const ReportOutlets = ({match})=> {
   const outlets = [
     {
-      title: 'Outlet 1'
+      title: 'Venues 1'
     },
     {
-      title: 'Outlet 2'
+      title: 'Venues 2'
     },
     {
-      title: 'Outlet 3'
+      title: 'Venues 3'
     },
     {
-      title: 'Outlet 4'
+      title: 'Venues 4'
     },
     {
-      title: 'Outlet 5'
+      title: 'Venues 5'
     },
     {
-      title: 'Outlet 6'
+      title: 'Venues 6'
     }
   ]
   return(

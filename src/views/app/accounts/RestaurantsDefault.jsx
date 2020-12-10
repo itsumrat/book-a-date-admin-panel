@@ -6,18 +6,52 @@ import Breadcrumb from "../../../containers/navs/Breadcrumb";
 import RestaurantTypesDefault from "./default";
 import RestaurantCard from "./RestaurantCard";
 import Button from 'reactstrap/es/Button';
-const restaurants = [
+import dishoom from '../../../assets/images/dishoom.jpg';
+export const shops = [
     {
-        title: 'Shop 1'
+        id: 1,
+        title: 'Dishoom',
+        img: dishoom,
+        venues:[
+            {
+                id: 11,
+                title: 'King Cross',
+                img: dishoom,
+            },
+            {
+                id: 12,
+                title: 'Shoreditch',
+                img: '',
+            },
+            {
+                id: 13,
+                title: 'Carnaby',
+                img: '',
+            },
+            {
+                id: 14,
+                title: 'Covent Garden',
+                img: '',
+            }
+        ]
     },
     {
-        title: 'Shop 2'
+        id: 2,
+        title: 'The LockHouse',
+        img: '',
+        venues:[]
     },
     {
-        title: 'Shop 3'
+        id: 3,
+        title: 'Bourne & Hollingworth',
+        img: '',
+        venues:[]
     },
     {
-        title: 'Shop 4'
+        id: 4,
+        title: 'Formagerie',
+        img: '',
+        venues:[]
     }
 ]
 const RestaurantsDefault = ({match}) => {
@@ -36,7 +70,7 @@ const RestaurantsDefault = ({match}) => {
             </Row>
             <Row>
                 <Row>
-                    {restaurants.map((item, index) => {
+                    {shops.map((item, index) => {
                         return (
                             <div key={`icon_card_${index}`}>
                                 <RestaurantCard match={match} {...item} className="m-4"/>

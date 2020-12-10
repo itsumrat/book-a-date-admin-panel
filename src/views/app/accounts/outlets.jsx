@@ -6,21 +6,26 @@ import Breadcrumb from "../../../containers/navs/Breadcrumb";
 import RestaurantCard from "./RestaurantCard";
 import OutletCard from "./OutletCard";
 import Button from 'reactstrap/es/Button';
+import { shops } from './RestaurantsDefault';
 const outlets = [
     {
-        title: 'Outlet 1'
+        title: 'Venues 1'
     },
     {
-        title: 'Outlet 2'
+        title: 'Venues 2'
     },
     {
-        title: 'Outlet 3'
+        title: 'Venues 3'
     },
     {
-        title: 'Outlet 4'
+        title: 'Venues 4'
     }
 ]
 const Outlets = ({match}) => {
+    const shop = shops.filter((res)=>{
+
+        return res.id.toString() ===match.params.shopId
+    })[0]
     const history = useHistory();
     return(
         <Fragment>
@@ -34,7 +39,7 @@ const Outlets = ({match}) => {
                 </Colxx>
             </Row>
             <Row>
-                {outlets.map((item, index) => {
+                {shop.venues.map((item, index) => {
                     return (
                         <div key={`icon_card_${index}`}>
                             <OutletCard match={match}{...item} className="m-4"/>

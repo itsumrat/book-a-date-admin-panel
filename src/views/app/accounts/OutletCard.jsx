@@ -3,7 +3,7 @@ import { Card, CardBody } from "reactstrap";
 import {useHistory, NavLink} from 'react-router-dom';
 import IntlMessages from "../../../helpers/IntlMessages";
 
-const OutletCard = ({className="mb-4", icon, title, value, match }) => {
+const OutletCard = ({className="mb-4", icon, id, img, title, value, match }) => {
     const history = useHistory();
     console.log(match)
     return (
@@ -11,11 +11,12 @@ const OutletCard = ({className="mb-4", icon, title, value, match }) => {
             width: 300,
             height: 300,
         }} className={`icon-row-item ${className}`}>
-           <NavLink to={`${match.url}/${title}`}>
+           <NavLink to={`${match.url}/${id}`}>
                <Card style={{height: '100%', cursor: 'pointer'}} >
                    <CardBody className="text-center">
                        <i style={{fontSize: 40, color: '#922c88'}} className={icon} />
-                       <h2 className="card-text font-weight-semibold mb-0">
+                     <img style={{width: '90%', borderRadius: '7%'}} src={img} alt=""/>
+                       <h2 className="card-text font-weight-semibold mt-3">
                            <IntlMessages id={title} />
                        </h2>
                        {/*<p className="lead text-center">{value}</p>*/}
