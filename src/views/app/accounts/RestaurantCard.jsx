@@ -15,7 +15,7 @@ const RestaurantCard = ({className="mb-4", icon, id, img, title,match, value }) 
                    <CardBody className="text-center">
                        <i style={{fontSize: 40, color: '#922c88'}} className={icon} />
 
-                     <img style={{width: '90%', borderRadius: '7%'}} src={img} alt=""/>
+                     {/*<img style={{width: '90%', borderRadius: '7%'}} src={img} alt=""/>*/}
                      <h2 className="card-text font-weight-semibold mt-3">
                        <IntlMessages id={title} />
                      </h2>

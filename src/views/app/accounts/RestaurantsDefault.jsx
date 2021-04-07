@@ -39,19 +39,82 @@ export const shops = [
         id: 2,
         title: 'The LockHouse',
         img: '',
-        venues:[]
+        venues:[
+            {
+                id: 11,
+                title: 'King Cross',
+                img: dishoom,
+            },
+            {
+                id: 12,
+                title: 'Shoreditch',
+                img: '',
+            },
+            {
+                id: 13,
+                title: 'Carnaby',
+                img: '',
+            },
+            {
+                id: 14,
+                title: 'Covent Garden',
+                img: '',
+            }
+        ]
     },
     {
         id: 3,
         title: 'Bourne & Hollingworth',
         img: '',
-        venues:[]
+        venues:[
+            {
+                id: 11,
+                title: 'King Cross',
+                img: dishoom,
+            },
+            {
+                id: 12,
+                title: 'Shoreditch',
+                img: '',
+            },
+            {
+                id: 13,
+                title: 'Carnaby',
+                img: '',
+            },
+            {
+                id: 14,
+                title: 'Covent Garden',
+                img: '',
+            }
+        ]
     },
     {
         id: 4,
         title: 'Formagerie',
         img: '',
-        venues:[]
+        venues:[
+            {
+                id: 11,
+                title: 'King Cross',
+                img: dishoom,
+            },
+            {
+                id: 12,
+                title: 'Shoreditch',
+                img: '',
+            },
+            {
+                id: 13,
+                title: 'Carnaby',
+                img: '',
+            },
+            {
+                id: 14,
+                title: 'Covent Garden',
+                img: '',
+            }
+        ]
     }
 ]
 const RestaurantsDefault = ({match}) => {

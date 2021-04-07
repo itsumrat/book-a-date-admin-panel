@@ -11,11 +11,11 @@ const OutletCard = ({className="mb-4", icon, id, img, title, value, match }) => 
             width: 300,
             height: 300,
         }} className={`icon-row-item ${className}`}>
-           <NavLink to={`${match.url}/${id}`}>
+           <NavLink to={`${match.url}/${title}`}>
                <Card style={{height: '100%', cursor: 'pointer'}} >
                    <CardBody className="text-center">
                        <i style={{fontSize: 40, color: '#922c88'}} className={icon} />
-                     <img style={{width: '90%', borderRadius: '7%'}} src={img} alt=""/>
+                     {/*<img style={{width: '90%', borderRadius: '7%'}} src={img} alt=""/>*/}
                        <h2 className="card-text font-weight-semibold mt-3">
                            <IntlMessages id={title} />
                        </h2>

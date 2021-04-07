@@ -39,7 +39,7 @@ const Outlets = ({match}) => {
                 </Colxx>
             </Row>
             <Row>
-                {shop.venues.map((item, index) => {
+                {outlets.map((item, index) => {
                     return (
                         <div key={`icon_card_${index}`}>
                             <OutletCard match={match}{...item} className="m-4"/>
