@@ -35,11 +35,11 @@ const OutletTeamPage = ({match}) => {
           path={`${match.url}/to-do-task`}
           render={props => <TeamTodoTask {...props} />}
         />
-        <Route
+        {/* <Route
           exact={true}
           path={`${match.url}/customer-support`}
           render={props => <TeamCustomerSupport {...props} />}
-        />
+        /> */}
         <Redirect to="/error" />
       </Switch>
     </Suspense>
