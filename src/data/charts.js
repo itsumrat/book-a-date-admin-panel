@@ -57,6 +57,39 @@ export const areaChartData = {
     },
   ],
 };
+export const yearlyVaneuReservationsData = {
+  labels: [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ],
+  datasets: [
+    {
+      label: '',
+      data: [54, 63, 60, 65, 60, 68, 60, 54, 63, 60, 65, 60],
+      borderColor: colors.themeColor1,
+      pointBackgroundColor: colors.foregroundColor,
+      pointBorderColor: colors.themeColor1,
+      pointHoverBackgroundColor: colors.themeColor1,
+      pointHoverBorderColor: colors.foregroundColor,
+      pointRadius: 4,
+      pointBorderWidth: 2,
+      pointHoverRadius: 5,
+      fill: true,
+      borderWidth: 2,
+      backgroundColor: colors.themeColor1_10,
+    },
+  ],
+};
 
 export const scatterChartData = {
   datasets: [

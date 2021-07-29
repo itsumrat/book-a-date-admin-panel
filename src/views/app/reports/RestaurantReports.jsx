@@ -20,6 +20,8 @@ import DataAnalysisReport from '../accounts/outlet/DataAnalysisReport';
 import ReportOutlets from '../accounts/outlet/ReportOutlets';
 import ProductCategory from '../accounts/outlet/ProductCategory';
 import YearlyRestaurantReport from './YearlyRestaurantReport';
+import YearVanueReservations from '../../../containers/dashboards/YearVanueReservations';
+import WeeklyVanueReservations from '../../../containers/dashboards/WeeklyVanueReservations';
 
 const RestaurantReport = ({ match }) => {
   const [activeFirstTab, setActiveFirstTab] = useState('1');
@@ -109,20 +111,20 @@ const RestaurantReport = ({ match }) => {
               <TabPane tabId="1">
                 <Row>
                   <Colxx xxs="12" sm="12" lg="6" md="6" className="mb-3">
-                    <SalesChartCard />
+                    <WeeklyVanueReservations />
                   </Colxx>
                   <Colxx xxs="12" sm="12" lg="6" md="6">
-                    <WebsiteVisitsChartCard />
+                    <YearVanueReservations />
                   </Colxx>
-                  <Colxx xxs="12" sm="12" lg="12" md="12">
+                  {/* <Colxx xxs="12" sm="12" lg="12" md="12">
                     <DataAnalysisReport />
-                  </Colxx>
+                  </Colxx> */}
                   {/* <Colxx  xxs="12" sm="12" lg="12" md="12"> */}
                   {/*  <ReportOutlets match={match}/> */}
                   {/* </Colxx> */}
-                  <Colxx xxs="12" sm="12" lg="12" md="12">
+                  {/* <Colxx xxs="12" sm="12" lg="12" md="12">
                     <ProductCategory match={match} />
-                  </Colxx>
+                  </Colxx> */}
                 </Row>
               </TabPane>
               <TabPane tabId="2">
