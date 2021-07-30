@@ -67,13 +67,16 @@ const reportOptions = [
     compoment: DailyRestaurantReport,
   },
 ];
-const YearlyRestaurantReport = ({ match }) => {
+const YearlyRestaurantReport = ({ category, match }) => {
   const [activeFirstTab, setActiveFirstTab] = useState('january');
   const toggleTab = (tab) => {
     setActiveFirstTab(tab);
   };
   return (
     <Row>
+      <Colxx xxs="12" sm="12" lg="12" md="12">
+        <h2>{category}</h2>
+      </Colxx>
       <Colxx xxs="12" sm="12" lg="12" md="12">
         <Card className="mb-4">
           <CardHeader>

@@ -22,6 +22,7 @@ import ProductCategory from '../accounts/outlet/ProductCategory';
 import YearlyRestaurantReport from './YearlyRestaurantReport';
 import YearVanueReservations from '../../../containers/dashboards/YearVanueReservations';
 import WeeklyVanueReservations from '../../../containers/dashboards/WeeklyVanueReservations';
+import CategoryWiseRestaurantReport from './CategoryWiseRestaurantReport';
 
 const RestaurantReport = ({ match }) => {
   const [activeFirstTab, setActiveFirstTab] = useState('1');
@@ -49,7 +50,7 @@ const RestaurantReport = ({ match }) => {
           </Button>
         </Colxx>
       </Row>
-      <YearlyRestaurantReport match={match} />
+      <CategoryWiseRestaurantReport match={match} />
       <Row>
         <Colxx xxs="12" sm="12" lg="12" md="12">
           <Card className="mb-4">

@@ -25,7 +25,7 @@ import WeeklyVanueReservations from '../../../containers/dashboards/WeeklyVanueR
 import YearVanueReservations from '../../../containers/dashboards/YearVanueReservations';
 
 const data = [
-  { day: 'Sunday', count: 100, status: 'Pending' },
+  { day: 'Sunday', count: 100,  status: 'Pending' },
   { day: 'Monday', count: 150, status: 'Confirmed' },
   { day: 'Tuesday', count: 100, status: 'Re-schedule' },
   { day: 'Wednesday', count: 20, status: 'Rejected' },
@@ -35,19 +35,19 @@ const data = [
 ];
 
 const monthlyData = [
-    { month: 'January', count: 100, status: 'Pending' },
-    { month: 'February', count: 150, status: 'Confirmed' },
-    { month: 'March', count: 100, status: 'Re-schedule' },
-    { month: 'April', count: 20, status: 'Rejected' },
-    { month: 'May', count: 30, status: 'Re-schedule' },
-    { month: 'June', count: 10, status: 'Refund' },
-    { month: 'July', count: 25, status: 'Pending' },
-    { month: 'August', count: 100, status: 'Pending' },
-    { month: 'September', count: 150, status: 'Confirmed' },
-    { month: 'Obtober', count: 100, status: 'Re-schedule' },
-    { month: 'November', count: 20, status: 'Rejected' },
-    { month: 'December', count: 30, status: 'Re-schedule' },
-  ];
+  { month: 'January', count: 100, status: 'Pending' },
+  { month: 'February', count: 150, status: 'Confirmed' },
+  { month: 'March', count: 100, status: 'Re-schedule' },
+  { month: 'April', count: 20, status: 'Rejected' },
+  { month: 'May', count: 30, status: 'Re-schedule' },
+  { month: 'June', count: 10, status: 'Refund' },
+  { month: 'July', count: 25, status: 'Pending' },
+  { month: 'August', count: 100, status: 'Pending' },
+  { month: 'September', count: 150, status: 'Confirmed' },
+  { month: 'Obtober', count: 100, status: 'Re-schedule' },
+  { month: 'November', count: 20, status: 'Rejected' },
+  { month: 'December', count: 30, status: 'Re-schedule' },
+];
 const OutletDataListPage = ({ match, intl }) => {
   const [activeFirstTab, setActiveFirstTab] = useState('1');
 
@@ -146,7 +146,8 @@ const OutletDataListPage = ({ match, intl }) => {
                                   <th scope="row">{item.day}</th>
                                   <td>{item.count}</td>
                                   <td>
-                                    <Badge color="primary">{item.status}</Badge>
+                                    {/* <Badge color="primary">{item.status}</Badge> */}
+                                    {(ind + 2) * item.count}
                                   </td>
                                 </tr>
                               ))}
@@ -177,9 +178,10 @@ const OutletDataListPage = ({ match, intl }) => {
                                     <th scope="row">{ind + 1}</th>
                                     <td>{item.count}</td>
                                     <td>
-                                      <Badge color="primary">
+                                      {/* <Badge color="primary">
                                         {item.status}
-                                      </Badge>
+                                      </Badge> */}
+                                      {(ind + 2) * item.count}
                                     </td>
                                   </tr>
                                 ))}
@@ -207,7 +209,8 @@ const OutletDataListPage = ({ match, intl }) => {
                                   <th scope="row">{item.month}</th>
                                   <td>{item.count}</td>
                                   <td>
-                                    <Badge color="primary">{item.status}</Badge>
+                                    {/* <Badge color="primary">{item.status}</Badge> */}
+                                    {(ind + 2) * item.count}
                                   </td>
                                 </tr>
                               ))}
